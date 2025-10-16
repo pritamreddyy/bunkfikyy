@@ -13,7 +13,7 @@
 - **Smooth Animations:** Subtle transitions and fade-ins for a delightful experience
 - **Responsive:** Works perfectly on mobile and desktop
 - **Customizable Target:** Adjust your attendance goal with a slider
-- **Open Source:** [View on GitHub]([(https://github.com/gowthamrdyy/Bunkifyyy)])
+- **Open Source:** [View on GitHub]([(https://github.com/pritamreddyy/bunkfikyy)])
 
 ---
 
