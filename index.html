@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Nikhil George" />
+    <meta
+      name="description"
+      content="75 Attendance Percentage Calculator for College. Find out the number of days you should attend to attain 75% attendance or the number of days you can bunk if you have more than 75%"
+    />
+    <meta name="keywords" content="attendance, 75%, calculator, percentage, attendance tracker, college attendance, student attendance tracking, attendance management, attendance software, attendance app, student tracking system, bunk, compulsory attendance, attendance calculator online, class attendance, track attendance, academic attendance, calculate attendance days, attendance tool, absence calculator, educational attendance, attendance monitoring, attendance record, class attendance system, school attendance, university attendance, absence tracking, attendance record keeping, attendance analytics, attendance planning, attendance optimization, attendance planning tool, absence management, Bunkscape, Bunkscape calculator, attendance statistics">
+    <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bunkifyyy - Attendance Calculator for Students" />
+    <meta
+      name="twitter:description"
+      content="Bunkifyyy helps students track how many classes they can bunk or how many more classes they need to attend to maintain their attendance percentage."
+    />
+    <meta property="og:title" content="Bunkifyyy - Attendance Calculator for Students" />
+    <meta
+      property="og:description"
+      content="Bunkifyyy helps students track how many classes they can bunk or how many more classes they need to attend to maintain their attendance percentage."
+    />
+    <meta property="og:url" content="https://attendance75.in/" />
+    <meta property="og:site_name" content="Bunkifyyy - Attendance Calculator for Students" />
+  
+ <link rel="icon" type="image/x-icon" href="./assets/icon1.png">
+ 
+  <title>Bunkifyyy - Attendance Calculator</title>
+  <meta name="Description" content="Find out the number of days you can bunk or the number of days you should attend to maintain your attendance.">
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="brand-logo">
+      <span class="brand-text">Bunkifyyy</span>
+      <div class="brand-tagline">Smart Attendance</div>
+    </div>
+  </nav>
+  <div class="header">
+    <h1>Attendance Calculator</h1>
+    <div class="subtitle">Smart attendance tracking for students</div>
+    <div class="author">by Pritam</div>
+  </div>
+  
+  <div class="calculator">
+    <div class="input-group">
+      <label for="totalHours">Total Hours</label>
+      <input type="number" id="totalHours" min="1" required placeholder="Enter total class hours">
+    </div>
+    
+    <div class="input-group">
+      <label for="attendedHours">Attended Hours</label>
+      <input type="number" id="attendedHours" min="0" required placeholder="Enter attended hours">
+    </div>
+    
+    <div class="input-group">
+      <label for="targetPercentage">Target Percentage <span id="sliderValue">75</span>%</label>
+      <div class="slider-container">
+        <input type="range" id="targetPercentage" min="60" max="95" value="75" oninput="updateSliderValue()">
+      </div>
+    </div>
+    
+    <button onclick="calculateAttendance()" class="calculate-btn">
+      <span class="btn-text">Calculate Attendance</span>
+    </button>
+    
+    <div id="result"></div>
+    <div class="gowtham-watermark">Pritam © 2024</div>
+  </div>
+  <footer id="footer" class="footer">
+    <p>
+      View Source Code on
+      <a
+        class="footer-link"
+        target="_blank"
+        href="https://github.com/gowthamrdyy/Bunkifyyy"
+        >GitHub &#8599;</a
+      >
+    </p>
+    <div class="branding">Made with <span style="color:#ff2d55;">&#10084;</span> by PReddy</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
